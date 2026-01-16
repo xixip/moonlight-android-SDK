@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GameStream SDK 测试应用"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#333333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务器地址:"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/server_address"
+            android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="输入服务器IP地址"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_server_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查服务器状态"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="12dp"
+        android:elevation="2dp" />
+
+    <Button
+        android:id="@+id/pair_server_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="配对服务器"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="12dp"
+        android:elevation="2dp" />
+
+    <Button
+        android:id="@+id/get_app_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取应用列表"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="12dp"
+        android:elevation="2dp"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/start_streaming_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始流式传输"
+        android:textSize="18sp"
+        android:padding="24dp"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp"
+        android:enabled="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态信息:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:text="等待操作..." />
+
+</LinearLayout>

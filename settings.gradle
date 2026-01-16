@@ -1,1 +1,7 @@
-include ':app'
+include ':sdk'
+include ':test-app'
+
+// 配置项目路径
+project(':sdk').projectDir = new File('sdk')
+project(':test-app').projectDir = new File('test-app')
+
